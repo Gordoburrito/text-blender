@@ -1,12 +1,18 @@
 @import '../variable-styles/colors.sass'
 @import '../variable-styles/breakpoints.sass'
+@import '../variable-styles/variables.sass'
 
 .share-features
   display: flex
   justify-content: flex-end
   gap: 1rem
-  padding: 2rem 2rem
+  padding: 2rem
   background-color: $secondary
+  @include tablet
+    position: fixed
+    bottom: 0
+    width: calc(100% - 4rem)
+    z-index: $z-top
 
   &__url-preview
     display: flex
