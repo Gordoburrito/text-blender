@@ -1,8 +1,6 @@
-import { Autocomplete, FormControl, InputLabel, Menu, MenuItem, Select, TextField } from "@mui/material";
-import { width } from "@mui/system";
-import { useEffect, useState } from "react";
+import { FormControl, InputLabel, MenuItem, Select, TextField } from "@mui/material";
+import { useState } from "react";
 import { SketchPicker } from "react-color";
-import AspectRatioOptions from "./AspectRatioOptions";
 import './SearchParams.sass';
 import ShareFeatures from "./ShareFeatures/ShareFeatures";
 

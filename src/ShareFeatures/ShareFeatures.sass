@@ -1,4 +1,5 @@
 @import '../styles/colors.sass'
+@import '../styles/breakpoints.sass'
 
 .css-ci5apu-MuiSvgIcon-root
   color: $white !important
@@ -19,6 +20,8 @@
     align-content: center
     justify-content: flex-end
     width: 60%
+    @include tablet
+      width: 100%
     &-label
       display: flex
     &-content
@@ -28,3 +31,5 @@
         width: 400px
         overflow-x: auto
         background-color: $primary
+        @include tablet 
+          width: 20px
