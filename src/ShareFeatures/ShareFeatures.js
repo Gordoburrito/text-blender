@@ -32,7 +32,11 @@ const ShareFeatures = ({ editedImgURL }) => {
           </code>
         </div>
       </label>
-      <Tooltip title={copied}>
+      <Tooltip
+        title={copied}
+        // adds tooltip on mobile
+        enterTouchDelay={0}
+      >
         <Button variant="contained" onClick={() => copyFeedback(editedImgURL)}>
           <ContentCopyIcon color="primary" />
         </Button>

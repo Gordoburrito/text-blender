@@ -1,12 +1,5 @@
-@import '../styles/colors.sass'
-@import '../styles/breakpoints.sass'
-
-.css-ci5apu-MuiSvgIcon-root
-  fill: $white !important
-  color: $white !important
-.css-jxtyyz
-  fill: $white !important
-  color: $white !important
+@import '../variable-styles/colors.sass'
+@import '../variable-styles/breakpoints.sass'
 
 .share-features
   display: flex
@@ -14,9 +7,6 @@
   gap: 1rem
   padding: 2rem 2rem
   background-color: $secondary
-
-    // background-color: $brand
-    // color: $secondary
 
   &__url-preview
     display: flex
@@ -35,5 +25,13 @@
         width: 400px
         overflow-x: auto
         background-color: $primary
-        @include tablet 
+        @include tablet
           width: 20px
+
+// styles 3rd party libraries
+.css-ci5apu-MuiSvgIcon-root
+  fill: $primary-contrast !important
+  color: $primary-contrast !important
+.css-jxtyyz
+  fill: $primary-contrast !important
+  color: $primary-contrast !important
